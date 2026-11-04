@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORONJO Green Energy Solution & Electrical Works</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-white text-slate-800 font-sans antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-emerald-900 text-white text-xs font-semibold py-2.5 px-4">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-2">
+                <span class="bg-yellow-400 text-slate-900 px-2 py-0.5 rounded text-[10px] font-bold tracking-wider uppercase">Official Channel</span>
+                <span>Oronjo Green Energy Solution & Electrical Works</span>
+            </div>
+            <div class="flex items-center gap-4 text-[11px] sm:text-xs">
+                <span>Call / WhatsApp: <strong class="text-yellow-400">0713 604 062</strong></span>
+                <span class="hidden sm:inline text-emerald-600">|</span>
+                <span class="hidden sm:inline">Paybill: <strong class="text-yellow-400">303030</strong> (Acc: RSKC#)</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Clean Text Branding (No Logo) -->
+            <div class="flex flex-col">
+                <a href="#" class="text-2xl font-black tracking-tight text-slate-900 uppercase">
+                    ORONJO <span class="text-emerald-700">GREEN ENERGY</span>
+                </a>
+                <span class="text-[10px] font-bold tracking-widest text-emerald-800 uppercase -mt-1">
+                    Solution & Electrical Works
+                </span>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-bold text-slate-700">
+                <a href="#services" class="hover:text-emerald-700 transition">Services</a>
+                <a href="#calculator" class="hover:text-emerald-700 transition">ROI Calculator</a>
+                <a href="#payment" class="hover:text-emerald-700 transition">Payment Info</a>
+                <a href="#contact" class="hover:text-emerald-700 transition">Contact Us</a>
+            </nav>
+
+            <!-- Call to Action -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:0713604062" class="px-5 py-2.5 bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold text-xs uppercase tracking-wider rounded-md transition shadow-sm border border-yellow-500">
+                    Call 0713 604 062
+                </a>
+                <button onclick="openModal()" class="px-5 py-2.5 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider rounded-md transition shadow-sm">
+                    Get Free Quote
+                </button>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-700 font-bold px-3 py-1.5 border border-slate-300 rounded text-xs uppercase">
+                Menu
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden bg-slate-50 border-b border-slate-200 px-4 py-4 space-y-3 font-semibold text-sm">
+            <a href="#services" class="block text-slate-700 hover:text-emerald-700">Services</a>
+            <a href="#calculator" class="block text-slate-700 hover:text-emerald-700">ROI Calculator</a>
+            <a href="#payment" class="block text-slate-700 hover:text-emerald-700">Payment Details</a>
+            <a href="#contact" class="block text-slate-700 hover:text-emerald-700">Contact Us</a>
+            <button onclick="openModal()" class="w-full text-center py-2.5 bg-emerald-700 text-white font-bold text-xs uppercase rounded">
+                Get Free Quote
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-slate-50 via-white to-white py-16 md:py-24 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-yellow-100 border border-yellow-300 text-slate-900 text-xs font-bold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+                    Clean Energy & Electrical Systems
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 tracking-tight leading-none uppercase">
+                    Reliable Solar PV & Backup Power <span class="text-emerald-700 underline decoration-yellow-400">Solutions</span>
+                </h1>
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed font-normal">
+                    We deliver high-performance solar PV installations, hybrid inverter configurations, lithium/gel battery storage systems, solar water pumping, and complete commercial & residential electrical wiring.
+                </p>
+                
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <button onclick="openModal()" class="px-8 py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-widest rounded-md shadow-md transition">
+                        Request Site Survey
+                    </button>
+                    <a href="tel:0713604062" class="px-8 py-4 bg-yellow-400 hover:bg-yellow-500 text-slate-900 font-bold text-xs uppercase tracking-widest rounded-md border border-yellow-500 shadow-sm transition">
+                        Direct Call: 0713 604 062
+                    </a>
+                </div>
+            </div>
+
+            <!-- Highlights Grid -->
+            <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-white border-2 border-slate-100 rounded-lg shadow-sm">
+                    <span class="text-xs font-bold text-emerald-800 uppercase tracking-widest">Efficiency Standard</span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mt-1">High Solar Yield</h3>
+                    <p class="text-slate-600 text-sm mt-2">Custom calculated grid-tie and off-grid panel setups maximizing daily kWh output.</p>
+                </div>
+                <div class="p-6 bg-white border-2 border-slate-100 rounded-lg shadow-sm">
+                    <span class="text-xs font-bold text-emerald-800 uppercase tracking-widest">Energy Independence</span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mt-1">Battery Storage</h3>
+                    <p class="text-slate-600 text-sm mt-2">Lithium-Ion and Gel battery storage arrays configured for full power reliability.</p>
+                </div>
+                <div class="p-6 bg-white border-2 border-slate-100 rounded-lg shadow-sm">
+                    <span class="text-xs font-bold text-emerald-800 uppercase tracking-widest">Technical Precision</span>
+                    <h3 class="text-xl font-extrabold text-slate-900 mt-1">Electrical Works</h3>
+                    <p class="text-slate-600 text-sm mt-2">Certified system wiring, distribution board installations, and protection setups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-extrabold tracking-widest uppercase text-emerald-800 bg-emerald-50 px-3 py-1 rounded border border-emerald-200">Our Core Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-black text-slate-900 uppercase mt-3">Engineering & Installation</h2>
+                <div class="w-16 h-1 bg-yellow-400 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 01</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Solar PV</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Solar PV Installations</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Design, mounting, and cabling of high-efficiency rooftop and ground-mounted solar panels for residential and commercial systems.</p>
+                    </div>
+                    <button onclick="openModal('Solar PV Installation')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 02</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Storage</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Battery Backup Systems</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Integration of durable Lithium-Ion and deep-cycle Gel battery banks to provide seamless uninterrupted power during outages.</p>
+                    </div>
+                    <button onclick="openModal('Battery Backup System')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 03</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Inverters</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Inverter Systems</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Pure sine wave hybrid inverters setup with smart load management, grid synchronization, and automatic changeover units.</p>
+                    </div>
+                    <button onclick="openModal('Inverter Systems')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 04</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Agriculture</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Solar Water Pumping</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Reliable submersible and surface solar water pump systems for agricultural irrigation, livestock, and domestic water supply.</p>
+                    </div>
+                    <button onclick="openModal('Solar Water Pumping')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 05</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Wiring</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Electrical Infrastructure</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Full building electrical wiring, conduit piping, earthing protection, circuit breakers, and consumer unit installations.</p>
+                    </div>
+                    <button onclick="openModal('Electrical Works')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="bg-white border-2 border-slate-100 rounded-lg p-8 shadow-sm hover:border-emerald-600 transition flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="text-xs font-bold bg-slate-100 text-slate-700 px-2.5 py-1 rounded">Service 06</span>
+                            <span class="text-xs font-bold text-emerald-700 uppercase">Audit</span>
+                        </div>
+                        <h3 class="text-xl font-black text-slate-900 uppercase">Energy Audits & Maintenance</h3>
+                        <p class="text-slate-600 text-sm mt-3 leading-relaxed">Power consumption audits, preventive system servicing, panel cleaning, and health testing for existing solar setups.</p>
+                    </div>
+                    <button onclick="openModal('Energy Audit & Maintenance')" class="mt-6 w-full py-2.5 bg-slate-900 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                        Inquire Service
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solar ROI & Savings Estimator Calculator Section -->
+    <section id="calculator" class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-xs font-extrabold tracking-widest uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded">Interactive Tool</span>
+                    <h2 class="text-3xl font-black text-slate-900 uppercase mt-3">Solar Savings Estimator</h2>
+                    <p class="text-slate-600 text-sm mt-2">Adjust your current monthly electricity bill to estimate potential annual solar savings.</p>
+                </div>
+
+                <div class="bg-white border-2 border-slate-200 rounded-xl p-8 shadow-sm">
+                    <div class="mb-8">
+                        <div class="flex justify-between items-center mb-2">
+                            <label for="monthlyBill" class="font-bold text-slate-800 text-sm uppercase">Current Monthly Electricity Bill (KES):</label>
+                            <span id="billDisplay" class="text-2xl font-black text-emerald-700">15,000 KES</span>
+                        </div>
+                        <input type="range" id="monthlyBill" min="2000" max="100000" step="1000" value="15000" class="w-full h-3 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-emerald-700">
+                        <div class="flex justify-between text-xs font-bold text-slate-700 mt-2">
+                            <span>2,000 KES</span>
+                            <span>50,000 KES</span>
+                            <span>100,000 KES</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-slate-100 text-center">
+                        <div class="p-4 bg-slate-50 rounded border border-slate-200">
+                            <span class="text-xs font-bold text-slate-700 uppercase">Est. Monthly Savings</span>
+                            <p id="monthlySavings" class="text-2xl font-black text-slate-900 mt-1">12,000 KES</p>
+                        </div>
+                        <div class="p-4 bg-emerald-50 rounded border border-emerald-200">
+                            <span class="text-xs font-bold text-emerald-800 uppercase">Est. Annual Savings</span>
+                            <p id="annualSavings" class="text-2xl font-black text-emerald-700 mt-1">144,000 KES</p>
+                        </div>
+                        <div class="p-4 bg-yellow-50 rounded border border-yellow-300">
+                            <span class="text-xs font-bold text-slate-800 uppercase">Recommended System</span>
+                            <p id="recommendedSystem" class="text-lg font-black text-slate-900 mt-1">3.5 kW Hybrid</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 text-center">
+                        <button onclick="openModal('Calculator Estimation Request')" class="px-8 py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider rounded shadow transition">
+                            Request Detailed Quote for This System
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Information Section -->
+    <section id="payment" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-2xl p-8 sm:p-12 shadow-xl border-t-4 border-yellow-400">
+                <div class="text-center mb-8">
+                    <span class="bg-yellow-400 text-slate-900 text-xs font-bold px-3 py-1 rounded uppercase tracking-wider">Official Payment Channel</span>
+                    <h2 class="text-3xl font-black uppercase tracking-tight mt-3">M-PESA Payment Details</h2>
+                    <p class="text-slate-300 text-xs mt-2">Use these official credentials for client deposits and invoice settlements.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white/10 p-6 rounded-lg border border-white/10 text-center">
+                        <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest">Business Paybill</span>
+                        <p class="text-4xl font-black tracking-wider text-white mt-2">303030</p>
+                        <span class="text-[11px] text-slate-300 block mt-1">Standard M-PESA Paybill</span>
+                    </div>
+
+                    <div class="bg-white/10 p-6 rounded-lg border border-white/10 text-center">
+                        <span class="text-xs font-bold text-yellow-400 uppercase tracking-widest">Account Number</span>
+                        <p class="text-4xl font-black tracking-wider text-white mt-2">RSKC#</p>
+                        <span class="text-[11px] text-slate-300 block mt-1">Enter RSKC# followed by your name</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4 text-xs font-bold">
+                    <button onclick="copyToClipboard('303030')" class="w-full sm:w-auto px-6 py-3 bg-yellow-400 hover:bg-yellow-500 text-slate-900 uppercase tracking-wider rounded transition">
+                        Copy Paybill Number
+                    </button>
+                    <button onclick="copyToClipboard('RSKC#')" class="w-full sm:w-auto px-6 py-3 bg-emerald-700 hover:bg-emerald-800 text-white uppercase tracking-wider rounded transition">
+                        Copy Account Code
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                
+                <!-- Contact Details -->
+                <div>
+                    <span class="text-xs font-extrabold tracking-widest uppercase text-emerald-800 bg-emerald-100 px-3 py-1 rounded">Direct Communication</span>
+                    <h2 class="text-3xl font-black text-slate-900 uppercase mt-3">Get In Touch</h2>
+                    <p class="text-slate-600 text-sm mt-3">Contact ORONJO Green Energy Solution & Electrical Works today for technical consultations, project evaluations, and equipment quotes.</p>
+
+                    <div class="mt-8 space-y-4">
+                        <div class="p-4 bg-white border border-slate-200 rounded-lg flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-slate-700 uppercase">Primary Mobile / WhatsApp</span>
+                                <p class="text-xl font-extrabold text-slate-900">0713 604 062</p>
+                            </div>
+                            <a href="tel:0713604062" class="px-4 py-2 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase rounded">
+                                Call Now
+                            </a>
+                        </div>
+
+                        <div class="p-4 bg-white border border-slate-200 rounded-lg flex items-center justify-between">
+                            <div>
+                                <span class="text-xs font-bold text-slate-700 uppercase">Payment Channel</span>
+                                <p class="text-xl font-extrabold text-slate-900">Paybill: 303030</p>
+                                <p class="text-xs text-slate-600 font-semibold">Account: RSKC#</p>
+                            </div>
+                            <span class="px-3 py-1 bg-yellow-100 text-slate-800 font-bold text-xs rounded border border-yellow-300">
+                                Active
+                            </span>
+                        </div>
+
+                        <div class="p-4 bg-white border border-slate-200 rounded-lg">
+                            <span class="text-xs font-bold text-slate-700 uppercase">Company Scope</span>
+                            <p class="text-sm font-bold text-slate-900 mt-1">Solar PV Systems | Inverters | Storage | Water Pumps | Electrical Works</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fast Contact Form -->
+                <div class="bg-white p-8 border-2 border-slate-200 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-black text-slate-900 uppercase mb-6">Send Direct Message</h3>
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                        <div>
+                            <label for="contactName" class="block text-xs font-bold text-slate-700 uppercase mb-1">Full Name</label>
+                            <input type="text" id="contactName" required class="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-sm outline-none">
+                        </div>
+                        <div>
+                            <label for="contactPhone" class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                            <input type="tel" id="contactPhone" required class="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-sm outline-none">
+                        </div>
+                        <div>
+                            <label for="contactService" class="block text-xs font-bold text-slate-700 uppercase mb-1">Service Required</label>
+                            <select id="contactService" class="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-sm outline-none bg-white">
+                                <option value="Solar PV Installation">Solar PV Installation</option>
+                                <option value="Battery Backup System">Battery Backup System</option>
+                                <option value="Inverter Systems">Inverter Systems</option>
+                                <option value="Solar Water Pumping">Solar Water Pumping</option>
+                                <option value="Electrical Works">Electrical Works</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="contactMessage" class="block text-xs font-bold text-slate-700 uppercase mb-1">Project Details</label>
+                            <textarea id="contactMessage" rows="3" required class="w-full px-4 py-3 border border-slate-300 rounded focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600 text-sm outline-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-widest rounded transition">
+                            Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 border-t-4 border-emerald-700 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6 border-b border-slate-800 pb-8">
+                <div>
+                    <p class="text-xl font-black text-white uppercase">ORONJO GREEN ENERGY</p>
+                    <p class="text-slate-400 text-xs font-bold">SOLUTION & ELECTRICAL WORKS</p>
+                </div>
+                <div class="flex flex-wrap gap-6 font-bold text-slate-300">
+                    <a href="#services" class="hover:text-yellow-400">Services</a>
+                    <a href="#calculator" class="hover:text-yellow-400">ROI Calculator</a>
+                    <a href="#payment" class="hover:text-yellow-400">Paybill Details</a>
+                    <a href="#contact" class="hover:text-yellow-400">Contact</a>
+                </div>
+            </div>
+            <div class="mt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+                <p>&copy; ORONJO Green Energy Solution & Electrical Works. All Rights Reserved.</p>
+                <p>Direct Call: <strong class="text-white">0713 604 062</strong> | Paybill: <strong class="text-white">303030</strong> (RSKC#)</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Request Modal -->
+    <div id="quoteModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-lg w-full p-6 sm:p-8 border-t-4 border-yellow-400 shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-700 text-xl font-bold">
+                &times;
+            </button>
+            <h3 class="text-2xl font-black text-slate-900 uppercase">Request Equipment Quote</h3>
+            <p class="text-slate-600 text-xs mt-1 mb-6">Fill in your requirements for a customized system design and price breakdown.</p>
+
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label for="modalName" class="block text-xs font-bold text-slate-700 uppercase mb-1">Your Name</label>
+                    <input type="text" id="modalName" required class="w-full px-3 py-2 border border-slate-300 rounded text-sm outline-none focus:border-emerald-600">
+                </div>
+                <div>
+                    <label for="modalPhone" class="block text-xs font-bold text-slate-700 uppercase mb-1">Phone Number</label>
+                    <input type="tel" id="modalPhone" required class="w-full px-3 py-2 border border-slate-300 rounded text-sm outline-none focus:border-emerald-600">
+                </div>
+                <div>
+                    <label for="modalService" class="block text-xs font-bold text-slate-700 uppercase mb-1">Selected Service</label>
+                    <input type="text" id="modalService" readonly class="w-full px-3 py-2 bg-slate-100 border border-slate-300 rounded text-sm text-slate-700 font-bold">
+                </div>
+                <div>
+                    <label for="modalNotes" class="block text-xs font-bold text-slate-700 uppercase mb-1">Notes / Location</label>
+                    <textarea id="modalNotes" rows="2" class="w-full px-3 py-2 border border-slate-300 rounded text-sm outline-none focus:border-emerald-600"></textarea>
+                </div>
+                <button type="submit" class="w-full py-3 bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs uppercase tracking-wider rounded transition">
+                    Send Quote Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
